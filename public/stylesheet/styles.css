@@ -8,6 +8,11 @@ h2{
     text-align: center;
 }
 
+p{
+    color:black;
+    text-align: center;
+}
+
 .center {
     display: block;
     margin-left: auto;

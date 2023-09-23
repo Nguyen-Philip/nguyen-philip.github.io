@@ -22,6 +22,12 @@ app.get('/', function(req, res){
     })
 })
 
+app.get('/nasa', function(req, res){
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY').then(function(response){
+        res.render('nasa.ejs', {name: null, nasaData: response.data})
+    })
+})
+
 app.post('/create', (req, res) => {
     console.log(req.body)
     res.redirect('/')
