@@ -1,3 +1,1 @@
 # nodeAssignment
-
-tests
